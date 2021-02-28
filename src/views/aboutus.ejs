@@ -1,0 +1,41 @@
+<html>
+<%- include('header'); -%>
+<body>
+<link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+<nav>
+    <ul class="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/teams">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <% var SuccessLogin; %>
+        <% if(SuccessLogin===false) {%>
+            <li><a href="/login">Login</a></li>
+        <% } else { %>
+            <% SuccessLogin===true%>
+            <li><a href="/Options">Admin</a></li>
+        <% } %>
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="about">
+    <img src="Images/aboutbooks.jpg"><br><br>
+    We are J's BookStore. J's BookStore was founded by 2020.<br>
+    We are selling different books for our customers.<br>
+    Customers can order their favorite books via our online platform.<br>
+    We hope more and more people can be attracted by different books to get involved in the book's world.<br>
+    We also hope our customers can enjoy reading books too.<br><br>
+</div>
+</body>
+<%- include('footer'); -%>
+</html>

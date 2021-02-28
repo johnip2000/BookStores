@@ -1,0 +1,50 @@
+<html>
+<%- include('header'); -%>
+<body>
+<link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+<nav>
+    <ul class="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/teams">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <% var SuccessLogin; %>
+        <% if(SuccessLogin===false) {%>
+            <li><a href="/login">Login</a></li>
+        <% } else { %>
+            <% SuccessLogin===true%>
+            <li><a href="/Options">Admin</a></li>
+        <% } %>
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="teams">
+    <table border="2" align="center">
+        <tr>
+            <th colspan="3" >J's BookStore</th>
+        </tr>
+        <tr>
+            <th rowspan="2"><img src="Images/me.GIF"></th>
+            <th width="200">Name</th>
+            <th width="200">Title</th>
+        </tr>
+        <tr>
+            <td align="center">Jason Wai Ki Ip</td>
+            <td align="center">Owner</td>
+        </tr>
+    </table>
+    <p>We are now recruiting a new member ro join our team. If you are interested in it, please feel free to ask us!</p>
+</div>
+</body>
+<%- include('footer'); -%>
+</html>

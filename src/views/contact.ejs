@@ -1,0 +1,44 @@
+<html>
+<%- include('header'); -%>
+<body>
+<link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+<nav>
+    <ul class="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/teams">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <% var SuccessLogin; %>
+        <% if(SuccessLogin===false) {%>
+            <li><a href="/login">Login</a></li>
+        <% } else { %>
+            <% SuccessLogin===true%>
+            <li><a href="/Options">Admin</a></li>
+        <% } %>
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="contact">
+    <u>Contact Us</u><br>
+    There are several efficient ways to contact us right now, see below:<br><br>
+
+    If it’s urgent, please try using live chat first. Our Phone No. is: <b>+1-(519)-748-5220</b><br>
+    If live chat is offline, please give us a call. We have a convenient call-back feature so you won’t have to wait on hold.<br>
+    If it isn’t urgent, feel free to email us. Please note: it’ll take 5 to 7 business days for us to reply due to the high contact centre volume.<br><br>
+
+    <u>Emails</u><br>
+    You may also contact us by sending us an email. Our email address is: <b>wip9247@conestogac.on.ca</b><br>
+</div>
+</body>
+<%- include('footer'); -%>
+</html>

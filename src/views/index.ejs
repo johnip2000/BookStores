@@ -1,0 +1,40 @@
+<html>
+<%- include('header'); -%>
+<body>
+
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+    <nav>
+    <ul class="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/teams">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <% var SuccessLogin; %>
+        <% if(SuccessLogin===false) {%>
+            <li><a href="/login">Login</a></li>
+        <% } else { %>
+            <% SuccessLogin===true%>
+            <li><a href="/Options">Admin</a></li>
+        <% } %>
+    </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="content">
+    <% for (var i=0; i<books.length; i++) { %>
+        <img src="<%= books[i].Picture %>" width="150" height="200">
+            <b><u><%= books[i].Name %></u></b>
+    <% } %>
+    </div>
+</body>
+<%- include('footer'); -%>
+</html>

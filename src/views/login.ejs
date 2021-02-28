@@ -1,0 +1,35 @@
+<html>
+<%- include('header'); -%>
+<body>
+
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+
+    <nav>
+    <ul class="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="/teams">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id="LoginForm" method="post" action="/login">
+        <h3>Username:</h3>
+        <input type="text" id="Username" name="Username">
+        <h3>Password:</h3>
+        <input type="password" id="Password" name="Password">
+        <p><input type="reset"  value="Reset">&emsp;&emsp;&emsp;
+        <input type="submit" value="Submit"></p>
+    </form>
+</body>
+<%- include('footer'); -%>
+</html>
